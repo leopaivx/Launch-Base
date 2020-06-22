@@ -46,5 +46,5 @@ Feito com :heart: by [Leonardo Paiva][Leonardo Paiva]
 [MySQL]:https://www.mysql.com/
 [HTML]:https://developer.mozilla.org/en-US/docs/Web/HTML
 [Express]:https://expressjs.com/pt-br/
-[Matheus Lascalla]:https://www.linkedin.com/in/leo-paiva/
+[Leonardo Paiva]:https://www.linkedin.com/in/leo-paiva/
 
