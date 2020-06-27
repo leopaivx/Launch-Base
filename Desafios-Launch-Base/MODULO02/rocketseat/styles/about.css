@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(241, 241, 243);
+}
+
+/* === HEADER === */
+
+.links{
+    padding: 28px;
+    text-align: center;
+}
+
+.links a{
+    text-decoration: none;      
+    color: #7159C1;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+}
+
+.links a:hover{
+    color: #8f7cd1;
+    transition: color 300ms;
+}
+
+
+/* ==== CONTENT ==== */
+
+
+
+.wrapper{
+    max-width: 450px;
+    position: absolute;
+    left: 8%;
+    margin-top: 4%;
+    display: flex;    
+    flex-direction: column; 
+}
+
+.wrapper h1{
+    font-size: 36px;
+    line-height: 52px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.wrapper p{
+    max-width: 400px;
+    color: #917fd1;
+    font-weight: normal;
+    opacity: 0.8;
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.wrapper a{
+    background-color: #7159C1;
+    max-width: 280px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.wrapper a:hover{
+    background-color: rgb(122, 107, 179);
+    transition: 300ms;
+}
+
+.image img{
+    max-width: 540px;
+    margin-top: 4%;
+    margin-left: 52vw;
+}
+
+.tecnologies{
+    background-color: #7159C1;
+    margin-top: 4%;
+    padding-bottom: 4%; 
+}
+
+.tecnologies .content{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;   
+}
+
+.tecnologies img{
+    max-width: 600px;    
+    position: relative;
+    left: 15%;
+    margin-top: 5%; 
+}
+
+.text{
+    max-width: 600px;
+    position: absolute;
+    left: 60%;
+    margin-top: 4%;
+    display: flex;    
+    flex-direction: column;
+}
+
+.text h1{
+    color: white;
+    max-width: 600px;
+    font-size: 46px;
+    line-height: 56px;
+    margin-bottom: 10px;
+}
+
+.text h3{
+    max-width: 500px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text p{
+    max-width: 500px;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* === FOOTER === */
+
+#footer{
+    margin-top: 80px;
+}
+
+#footer a{
+    border-bottom: 3px solid #8f7cd1;
+}
