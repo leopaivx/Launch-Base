@@ -13,13 +13,15 @@ body{
     background-color: rgb(241, 241, 243);
 }
 
+/* === HEADER === */
+
 .links{
     padding: 28px;
     text-align: center;
 }
 
 .links a{
-    text-decoration: none;
+    text-decoration: none;      
     color: #7159C1;
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
@@ -29,73 +31,6 @@ body{
 .links a:hover{
     color: #8f7cd1;
     transition: color 300ms;
-}
-
-#wrapper{
-    padding: 28px;
-    text-align: center;
-    
-    
-    background-color: rgb(241, 241, 243);
-}
-
-#wrapper h1{
-
-    max-width: 500px;
-    font-size: 42px;
-    line-height: 52px;
-    margin: 28px auto;
-    text-align: center;
-    color: #6c55b6;
-}
-
-#wrapper img{
-    max-height: 250px;
-    max-width: 250px;
-    text-align: left;
-    border-radius: 50%;
-    border: 4px solid #7159C1;
-}
-
-
-#wrapper h2{
-    max-width: 500px;
-    margin: 32px auto;
-    opacity: 0.8;
-   
-
-    
-}
-
-#wrapper p{
-    max-width: 500px;
-    margin: 0 auto;
-    color: #6c55b6;
-}
-
-#list{
-    text-align: center;
-}
-
-#list h2{
-    max-width: 500px;
-    margin: 18px auto;
-    opacity: 0.8;
-}
-
-#list li{
-    color: #6c55b6;
-    font-size: 18px;
-    margin: 6px auto;
-}
-
-#footer a{
-    color: #593fad;
-    border-bottom: 3px solid #8f7cd1;
-}
-
-#footer a:hover{
-    color: #8f7cd1;
 }
 
 /* === Cards === */
@@ -120,33 +55,25 @@ body{
     padding: 30px;
     border-radius: 20px;
     cursor: pointer;
-  
 }
 
 .card img{
     padding-top: 80px;
 }
 
-
-
 #starter h3{
     color: #7159C1;
-    padding: 32px;
-    
+    padding: 32px; 
 }
 
 #launchbase h3{
     color: #FD951F;
-    padding: 32px;
-    
-    
+    padding: 32px;    
 }
 
 #gostack h3{
     color: #04D361;
     padding: 32px;
-    
-    
 }
 
 .card p{
@@ -160,7 +87,6 @@ body{
     background-color: #7159C1;
     padding: 16px;
     border-radius: 8px;
-
 }
 
 #launchbase a{
@@ -168,7 +94,6 @@ body{
     background-color: #FD951F;
     padding: 16px;
     border-radius: 8px;
-
 }
 
 #gostack a{
@@ -176,7 +101,6 @@ body{
     background-color: #04D361;
     padding: 16px;
     border-radius: 8px;
-
 }
 
 #starter:hover{
@@ -209,7 +133,6 @@ body{
     width: 90%;
     margin: 5vh auto;
     position: relative;
-
 }
 
 
@@ -227,8 +150,7 @@ body{
     display: flex; 
     right: 8px;
     top: 8px;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 .modal .maximize-modal{
@@ -236,13 +158,12 @@ body{
     display: flex; 
     right: 36px;
     top: 8px;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 
 
 
-/* ====MODAL ATIVO ==== */
+/* ====MODAL ACTIVE ==== */
 
 .modalOverlay.active{
     opacity: 1;
