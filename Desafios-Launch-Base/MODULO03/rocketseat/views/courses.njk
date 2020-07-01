@@ -16,34 +16,19 @@
 
 <div class="cards">
 
-    <div class="card" id="starter">
+{% for course in courses %}
+
+    <div class="card" id="{{course.id}}">
         <div class="content">
-            <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="">
-            <h3>Torne-se um programador desejado</h3>
-            <p>no mercado com esses cursos gratuitos</p>
+            <img src="{{course.course_url}}" alt="">
+            <h3>{{course.title}}</h3>
+            <p>{{course.description}}</p>
             <a>Mais Detalhes</a>
         </div>
 
-
     </div>
 
-    <div class="card" id="launchbase">
-        <div class="content">
-            <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="">
-            <h3>Domine programação do zero</h3>
-            <p>e tenha acesso às melhores oportunidades do mercado</p>
-            <a>Mais Detalhes</a>
-        </div>
-    </div>
-
-    <div class="card" id="gostack">
-        <div class="content">
-            <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="">
-            <h3>Treinamento imersivo</h3>
-            <p>nas tecnologias mais modernas de desenvolvimento web</p>
-            <a>Mais Detalhes</a>
-        </div>
-    </div>
+{% endfor %}
 
 </div>
 

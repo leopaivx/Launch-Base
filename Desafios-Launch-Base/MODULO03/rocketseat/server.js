@@ -1,5 +1,6 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
+const courses = require('./data')
 
 const server = express()
 
@@ -14,11 +15,27 @@ nunjucks.configure('views',{
 
 
 server.get("/", function(req, res){
-    return res.render('about')
+    const data = {
+        title: "As melhores tecnologias em programação, direto ao ponto e do jeito certo.",
+        description: "No meio de tanta informação e da quantidade de ferramentas que surgem todos os dias, você precisa de alguém que te leve na direção certa.",
+        button: "Quero embarcar nesse foguete",
+        rocket_url: "assets/undraw_Outer_space_drqu.svg",
+
+        trophy_url: "assets/undraw_winners_ao2o.svg",
+        tecnologies_title: "As mesmas tecnologias utilizadas por empresas como:",
+        companies: "Nubank, Netflix, Uber, Instagram e Airbnb",
+        tecnologies_description: "Imagine você dominando as mesmas tecnologias adotadas pelos melhores times do mundo, construindo aplicações de alta performance e se destacando entre os maiores programadores."
+
+    }
+
+
+
+    return res.render('about', {about: data})
 })
 
 server.get("/courses", function(req, res){
-    return res.render('courses')
+   
+    return res.render('courses', {courses})
 })
 
 server.use(function(req, res) {
