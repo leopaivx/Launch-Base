@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+<link rel="stylesheet" href="styles/404.css">
+<title>Error 404</title>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="errorImg">
+
+    <img src="/assets/undraw_page_not_found_su7k.svg" alt="">
+
+</div>
+
+<div class="bla">
+    <h1>Ei dev, essa página não pode ser encontrada :/</h1>
+    <a href="/">Se quiser voltar para a página inicial, é só clicar aqui.</a>
+</div>
+
+{% endblock %}

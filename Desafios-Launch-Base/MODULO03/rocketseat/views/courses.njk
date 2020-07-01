@@ -1,0 +1,75 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+<link rel="stylesheet" href="styles/content.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<title>RocketSeat</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="cards">
+
+    <div class="card" id="starter">
+        <div class="content">
+            <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="">
+            <h3>Torne-se um programador desejado</h3>
+            <p>no mercado com esses cursos gratuitos</p>
+            <a>Mais Detalhes</a>
+        </div>
+
+
+    </div>
+
+    <div class="card" id="launchbase">
+        <div class="content">
+            <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="">
+            <h3>Domine programação do zero</h3>
+            <p>e tenha acesso às melhores oportunidades do mercado</p>
+            <a>Mais Detalhes</a>
+        </div>
+    </div>
+
+    <div class="card" id="gostack">
+        <div class="content">
+            <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="">
+            <h3>Treinamento imersivo</h3>
+            <p>nas tecnologias mais modernas de desenvolvimento web</p>
+            <a>Mais Detalhes</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="modalOverlay ">
+
+    <div class="modal">
+        <div class="close-modal">
+            <span class="material-icons">close</span>
+        </div>
+
+        <div class="maximize-modal">
+            <span class="material-icons">open_in_full</span>
+        </div>
+
+        <div class="modal-content">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<script src="scripts.js"></script>
+
+{% endblock %}
