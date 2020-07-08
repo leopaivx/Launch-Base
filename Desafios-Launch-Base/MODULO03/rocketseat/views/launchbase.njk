@@ -4,16 +4,33 @@
 
 <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
-<link rel="stylesheet" href="/styles/about.css">
+<link rel="stylesheet" href="/styles/launchbase.css">
 <title>LaunchBase</title>
 
 {% endblock %}
 
 {% block content %}
 
-<h1>LaunchBase</h1>
-<h2>O que é o LaunchBase?</h2>
-<p>O LaunchBase é um treinamento no formato de bootcamp online que tem duração de 8 semanas. A cada semana os conteúdos são liberados de acordo com um cronograma, guiando o aluno pelas ferramentas e conceitos mais modernos de desenvolvimento web para entrar com o pé direito nesse universo e ir direto ao ponto naquilo que realmente importa para alcançar seus maiores objetivos como dev.</p>
+<div class="wrapper">
+    <h1>LaunchBase</h1>
+    <h2>O que é o LaunchBase?</h2>
+    <p>O LaunchBase <a>é um treinamento no formato de bootcamp online</a> que tem duração de 8 semanas. A cada semana os conteúdos são liberados de acordo com um cronograma, guiando o aluno pelas ferramentas e conceitos mais modernos de desenvolvimento web para entrar com o pé direito nesse universo e <a>ir direto ao ponto naquilo que realmente importa para alcançar seus maiores objetivos como dev.</a></p>
+</div>
+
+<div class="tecnologies">
+    <div class="content">
+        <img src="{{about.launchbase_url}}" alt="trophy">
+        <div class="text">
+            <h1>{{about.tecnologies_title}}</h1>
+            <h3>{{about.companies}}</h3>
+            <p>{{about.tecnologies_description}}</p>
+        </div>
+        <!--text -->
+
+    </div>
+    <!--content -->
+</div>
+<!--tecnologies -->
 
 {% endblock %}
 
