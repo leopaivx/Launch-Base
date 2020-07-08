@@ -4,14 +4,32 @@
 
 <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
-<link rel="stylesheet" href="/styles/about.css">
+<link rel="stylesheet" href="/styles/starter.css">
 <title>Starter</title>
 
 {% endblock %}
 
 {% block content %}
 
-<h1>Starter</h1>
-<h2>Cursos 100% online e gratuitos para você entrar com o pé direito nas tecnologias mais desejadas do mercado.</h2>
+<div class="wrapper">
+    <h1>Starter</h1>
+    <h2><a>Cursos 100% online e gratuitos</a> para você entrar com o pé direito nas tecnologias mais desejadas do mercado.</h2>
+    <p>Descubra o caminho para dominar a OmniStack.</p>
+</div>
+
+<div class="tecnologies">
+    <div class="content">
+        <img src="{{about.trophy_url}}" alt="trophy">
+        <div class="text">
+            <h1>{{about.tecnologies_title}}</h1>
+            <h3>{{about.companies}}</h3>
+            <p>{{about.tecnologies_description}}</p>
+        </div>
+        <!--text -->
+
+    </div>
+    <!--content -->
+</div>
+<!--tecnologies -->
 
 {% endblock %}

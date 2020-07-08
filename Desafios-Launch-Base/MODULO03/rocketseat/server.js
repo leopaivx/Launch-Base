@@ -42,7 +42,13 @@ server.get("/courses", function(req, res){
 
 server.get("/courses/:id", function(req, res){
     const id = req.params.id;
-    return res.render(id)
+    const data = {
+        trophy_url: "/assets/undraw_winners_ao2o.svg",
+        tecnologies_title: "As mesmas tecnologias utilizadas por empresas como:",
+        companies: "Nubank, Netflix, Uber, Instagram e Airbnb",
+        tecnologies_description: "Imagine você dominando as mesmas tecnologias adotadas pelos melhores times do mundo, construindo aplicações de alta performance e se destacando entre os maiores programadores."
+    }
+    return res.render(id, {about: data})
 })
 
 server.use(function(req, res) {
