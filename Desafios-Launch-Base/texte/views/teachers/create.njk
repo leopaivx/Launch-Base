@@ -1,0 +1,67 @@
+{% extends "layout.njk" %}
+
+{% block header %}
+    <title>Teachers</title>
+    <link rel="stylesheet" href="/styles.css">
+{% endblock header %}
+
+{% block content %}
+
+<div class="card">
+    <section class="avatar" style="background: url(https://source.unsplash.com/collection/489203/500x500) no-repeat center center / cover">
+
+    </section>
+    
+    <form class="details">
+
+        <h3>Novo Professor</h3>
+
+        <div class="item">
+            <div>Avatar URL</div>
+            <div><input type="url" name="avatar_url" placeholder="http://"></div>
+        </div>
+
+        <div class="item">
+            <div>Nome</div>
+            <div><input type="text" name="name" placeholder="Nome do professor"></div>
+        </div>
+
+        <div class="item">
+            <div>Data de nascimento</div>
+            <div><input type="date" name="birth"></div>
+        </div>
+
+         <div class="item">
+            <div>Grau de escolaridade</div>
+            <div>
+                <select name="schooling" id="appearance-select">
+                    <option>Selecione:</option>
+                    <option value="complete_high_school">Ensino Médio Completo</option>
+                    <option value="complete_higher_education">Ensino Superior Completo</option>
+                    <option value="masters">Mestrado</option>
+                    <option value="doctorate">Doutorado</option>
+                </select>
+            </div>
+        </div>
+
+         <div class="item">
+            <div>Tipo de aula</div>
+            <div>
+                <span><input type="radio" name="class" value="presential" checked>Presencial</span>
+                <span><input type="radio" name="class" value="e-learning">À distância</span>
+            </div>
+        </div>
+
+         <div class="item">
+            <div>Acompanhamento</div>
+            <div>
+               <input type="text" name="services" placeholder="Separe os serviços prestados por vírgula">
+            </div>
+        </div>
+
+        <button type="submit">Salvar</button>
+
+    </form>
+</div>
+
+{% endblock content %}

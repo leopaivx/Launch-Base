@@ -1,0 +1,188 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+
+:root{
+    --primary-color: #F9A826;
+    --background-color: rgb(238, 235, 235);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+}
+
+header{
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+}
+
+.links{
+    font-size: 22px;
+}
+
+.links a + a{
+    margin-left: 32px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #777;
+    position: relative;
+}
+
+.links a.active{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.links a:hover{
+    color: var(--primary-color);
+   
+}
+
+.links a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after{
+    width: 100%;
+    transition: width 500ms ease-in-out;
+}
+
+/* === CARD === */
+
+.card{
+    background-color: white;
+    width: 800px;
+    min-height: 400px;
+    margin: 45px auto;
+    display: block;
+
+    display: grid;
+    grid-template-columns: 40% 1fr;
+
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4);
+
+    animation: up 700ms ease;
+}
+
+@keyframes up{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* === DETAILS === */
+
+.details{
+    padding: 32px;
+}
+
+.details .item{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
+.details .item:nth-child(2){
+    border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1){
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    letter-spacing: 0.7px;
+    font-weight: 400;
+}
+
+.details .item div:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.details h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.details .item span{
+    background-color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 16px;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* === FORM === */
+
+input{
+    margin-top: 4px;
+    width: 100%;
+    outline: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+input[type="radio"]{
+    width: initial;
+    margin-right: 4px;
+    
+}
+
+input::placeholder{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#appearance-select{
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    appearance: none; /* Remove estilo padrão do FireFox*/
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+    background-position: 218px center;  /*Posição da imagem do background*/
+    width: 250px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height:30px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    border:1px solid #ddd;
+    padding-left: 12px; /* Configurações de padding para posicionar o texto no campo */
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+button[type="submit"]{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 8px 32px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 32px;
+    cursor: pointer;
+}
