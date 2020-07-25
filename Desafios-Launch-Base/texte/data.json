@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "Leonardo Paiva",
+      "birth": 997401600000,
+      "schooling": "complete_high_school",
+      "course": "presential",
+      "services": "Geografia",
+      "created_at": 1595709157992
+    }
+  ]
+}
