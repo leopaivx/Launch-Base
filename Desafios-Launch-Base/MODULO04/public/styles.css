@@ -126,7 +126,7 @@ header{
     color: var(--primary-color);
 }
 
-.details .item div:nth-child(2) span{
+.details .item span{
     background-color: var(--primary-color);
     padding: 8px 16px;
     border-radius: 16px;
@@ -136,4 +136,53 @@ header{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 12px;
+}
+
+/* === FORM === */
+
+input{
+    margin-top: 4px;
+    width: 100%;
+    outline: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+input[type="radio"]{
+    width: initial;
+    margin-right: 4px;
+    
+}
+
+input::placeholder{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#appearance-select{
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    appearance: none; /* Remove estilo padrão do FireFox*/
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+    background-position: 218px center;  /*Posição da imagem do background*/
+    width: 250px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height:30px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    border:1px solid #ddd;
+    padding-left: 12px; /* Configurações de padding para posicionar o texto no campo */
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+button[type="submit"]{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 8px 32px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 32px;
+    cursor: pointer;
 }
